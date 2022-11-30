@@ -494,23 +494,26 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-description">Підпишіться на розсилку</p>
-          <div class="subscribe-block">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-button" type="button">
-              Підписатися
-              <svg class="subscribe-icon">
-                <use href="./images/icons/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
+          <form name="subscribe-form">
+            <div class="subscribe-block">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe-button" type="submit">
+                Підписатися
+                <svg class="subscribe-icon">
+                  <use href="./images/icons/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-button" type="button">
@@ -542,7 +545,6 @@
               <input
                 class="modal-phone modal-input"
                 type="tel"
-                class="modal-form-input"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 required
               />
